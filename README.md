@@ -1,6 +1,6 @@
 # 🚀 实时金融资产监控预警系统 (Finance Monitor System)
 
-这是一个基于 Python 的工业级后端系统，旨在实现 7x24 小时的全自动金融资产（股票、加密货币等）价格巡检与实时报警。
+这是一个基于 Python 的后端系统，旨在实现 7x24 小时的全自动金融资产（股票、加密货币等）价格巡检与实时报警。
 
 ## 🌟 项目亮点
 - **异步解耦架构**：采用 **FastAPI + Celery + Redis** 生产消费者模型，将 I/O 密集型任务（API 抓取）与业务逻辑分离。
@@ -43,7 +43,4 @@ API 服务: uvicorn main:app --reload
 初版 (同步/单次),~8.6s,极低（容易阻塞）
 优化版 (异步/批量),~0.8s,极高（异步非阻塞）
 ```
-## 预警效果展示
-```
-<img width="1125" height="2436" alt="image" src="https://github.com/user-attachments/assets/689df053-9b1a-405a-b0ad-eaf26361f113" />
-```
+
